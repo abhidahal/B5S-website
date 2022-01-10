@@ -250,6 +250,12 @@ a{color:inherit}
 .show-inline-block{display:inline-block!important}
 @media (max-width:1205px){.auto{max-width:95%}}
 @media (max-width:600px){
+  .ytvid{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
   .modal-content{
     margin:0 10px;
     width:auto!important}
@@ -700,4 +706,8 @@ img,picture {
 
 .flex:visited{
   transform: translateY(-2px) ;
+}
+.ytvid{
+  width: 100%;
+    border-radius: 30px 30px 30px 30px;
 }
