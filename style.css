@@ -589,7 +589,6 @@ a{color:inherit}
 
 img,picture {
   max-width: 100%;
-  display: block;
 }
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -710,4 +709,8 @@ img,picture {
 .ytvid{
   width: 100%;
     border-radius: 30px 30px 30px 30px;
+}
+.third-m{
+  float:left;
+  width:33.33333%;
 }
