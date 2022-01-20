@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -96,24 +98,24 @@ body {font-family: "Lato", sans-serif}
 </div>
 
   <!-- The Band Section -->
-  <div class="container content center padding-64" style="max-width:800px;" id="about" >
+  <div class="container content center padding-64" style="max-width:800px;" id="about">
     <h2 class="wide padding-large">Black Five Strings</h2>
     <p class="opacity padding-large"><i>Cover Band</i></p>
-    <p class="justify">
+    <p class="justify" >
       We are a group music enthusiast working on different music cover along with music development projects.
       We have been exploring and developing music along with covering songs. 
       We are uploading our music cover projects on YouTube since oct 4th 2014. 
       Visit our channel to check out our work.</p>
     <div class="row padding-32">
-      <div class="third-m">
+      <div class="third-m" data-aos="zoom-in" data-aos-duration="1000">
         <p>Abhishek Dahal</p>
         <img src="images/abhi.png" class="round margin-bottom" alt="Random Name" style="width:60%">
       </div>
-      <div class="third-m">
+      <div class="third-m" data-aos="zoom-in" data-aos-duration="1000">
         <p>Sabin Dahal</p>
         <img src="images/sabin.png" class="round margin-bottom" alt="Random Name" style="width:60%">
       </div>
-      <div class="third-m">
+      <div class="third-m" data-aos="zoom-in" data-aos-duration="1000">
         <p>David Dhungel</p>
         <img src="images/david.png" class="round" alt="Random Name" style="width:60%">
       </div>
@@ -122,7 +124,7 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Tour Section -->
   <div class="black padding-300" id="follow-us">
-      <div class="containerz">
+      <div class="containerz" data-aos="fade-right" data-aos-duration="1600">
         <div class="feature-grid-containerz grid grid--columns">
           <div class="feature-grid-text">
             <h2 class="uppercase" ><span class="text-red" style="font-size: 3.5rem;line-height: 1;">Black Five Strings</span></h2>
@@ -147,8 +149,8 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Contact Section -->
   <div class="container content center padding-200"  id="new">
-    <h2 class="wide center">NEW</h2>
-    <p class="opacity center"><i>Latest Video From Youtube.</i></p>
+    <h2 class="wide center" data-aos="zoom-in" data-aos-duration="1000">NEW</h2>
+    <p class="opacity center" data-aos="zoom-in" data-aos-duration="1000"><i>Latest Video From Youtube.</i></p>
     <iframe 
     class="ytvid"
     width="840" 
@@ -156,7 +158,7 @@ body {font-family: "Lato", sans-serif}
     src="https://www.youtube.com/embed/L5wnwhfj53A"
     title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
+    allowfullscreen data-aos="zoom-in" data-aos-duration="1600">
   </iframe>
 </div>
   
@@ -232,6 +234,37 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//aos-siv
+AOS.init();
+
+        var acc = document.getElementsByClassName("accordion");
+
+        var i;
+
+        
+
+        for (i = 0; i < acc.length; i++) {
+
+          acc[i].addEventListener("click", function() {
+
+            this.classList.toggle("active");
+
+            var panel = this.nextElementSibling;
+
+            if (panel.style.maxHeight) {
+
+              panel.style.maxHeight = null;
+
+            } else {
+
+              panel.style.maxHeight = panel.scrollHeight + "px";
+
+            } 
+
+          });
+
+        }
 </script>
 
 </body>
