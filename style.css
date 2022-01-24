@@ -466,7 +466,9 @@ img,picture {
     width: 100%;
     height: 100%;
     padding-bottom: 20px;
-    border-radius: 30px;
+    border-radius: 2rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
   }
   .grad2{
     width: 100%;
