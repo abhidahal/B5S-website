@@ -525,6 +525,5 @@ img,picture {
   .feature-grid > a {
     border-radius: 0.75em;
     transition: transform 350ms ease-in-out;
-    overflow: hidden;
-  }
+    overflow: hidden;}
 }
