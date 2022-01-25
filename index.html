@@ -7,290 +7,341 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+  body {
+    font-family: "Lato", sans-serif
+  }
+
+  .mySlides {
+    display: none
+  }
 </style>
+
 <body>
 
-<!-- Navbar -->
-<div class="top">
-  <div class="bar black card">
-    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="bar-item button padding-large">HOME</a>
-    <a href="#about" class="bar-item button padding-large hide-small">ABOUT</a>
-    <a href="#follow-us" class="bar-item button padding-large hide-small">FOLLOW US</a>
-    <a href="#new" class="bar-item button padding-large hide-small">NEW!</a>
-    <div class="dropdown-hover hide-small">
-      <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="dropdown-content bar-block card-4">
-        <a href="page-2.html#gear" class="bar-item button">Gear Used</a>
-        <a href="page-2.html#merch" class="bar-item button">Merch</a>
-        <a href="page-2.html" class="bar-item button">Others</a>
+  <!-- Navbar -->
+  <div class="top">
+    <div class="bar black card">
+      <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="bar-item button padding-large">HOME</a>
+      <a href="#about" class="bar-item button padding-large hide-small">ABOUT</a>
+      <a href="#follow-us" class="bar-item button padding-large hide-small">FOLLOW US</a>
+      <a href="#new" class="bar-item button padding-large hide-small">NEW!</a>
+      <div class="dropdown-hover hide-small">
+        <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content bar-block card-4">
+          <a href="page-2.html#gear" class="bar-item button">Gear Used</a>
+          <a href="page-2.html#merch" class="bar-item button">Merch</a>
+          <a href="page-2.html" class="bar-item button">Others</a>
+        </div>
       </div>
+      <a href="javascript:void(0)" class="padding-large hover-red hide-small right"><i class="fa fa-search"></i></a>
     </div>
-    <a href="javascript:void(0)" class="padding-large hover-red hide-small right"><i class="fa fa-search"></i></a>
   </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
     <a href="#about" class="bar-item button padding-large" onclick="myFunction()">ABOUT</a>
     <a href="#follow-us" class="bar-item button padding-large" onclick="myFunction()">FOLLOW US</a>
     <a href="#new" class="bar-item button padding-large" onclick="myFunction()">NEW!</a>
     <a href="page-2.html" class="bar-item button padding-large" onclick="myFunction()">MERCH</a>
-</div>
+  </div>
 
-<!-- Page content -->
-<div class="content" style="max-width:2000px;margin-top:46px">
+  <!-- Page content -->
+  <div class="content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="slideshow-container">
-  <div class="mySlides display-container center fade">
-    <a href="https://youtu.be/L5wnwhfj53A" target="_b">
-    <img src="images/header.png" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small grad">
-      <h3>My Heart Will Go On</h3>
-      <p><b>Titanic Theme Song.</b></p>   
-    </div></a>
-  </div>
-  <div class="mySlides display-container center fade">
-    <a href="https://youtu.be/nTixER6mJFc" target="_b">
-    <img src="images/header1.png" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small grad">
-      <h3>Don't Cry X November Rain</h3>
-      <p><b>Guns N' Roses.</b></p>    
-    </div></a>
-  </div>
-  <div class="mySlides display-container center fade">
-    <a href="https://youtu.be/Wne0p5zj990" target="_b">
-    <img src="images/header2.png" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small grad">
-      <h3>Hearts Burst Into Fire</h3>
-      <p><b>Bullet for My Valentine.</b></p>    
-    </div></a>
-  </div>
-  <div class="mySlides display-container center fade">
-    <a href="https://youtu.be/S7myTIt-9dY" target="_b">
-    <img src="images/header3.jpg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small grad">
-      <h3>Bhanai</h3>
-      <p><b>Tribal Rain.</b></p>    
-    </div></a>
-  </div>
-  <div class="mySlides display-container center fade">
-    <a href="https://youtu.be/Ug-ioi0pedo" target="_b">
-    <img src="images/header4.png" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small grad">
-      <h3>Hotel California</h3>
-      <p><b>Eagles.</b></p>    
-    </div></a>
-  </div>
-  
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+    <!-- Automatic Slideshow Images -->
+    <div class="slideshow-container">
+      <div class="mySlides display-container center fade">
+        <a href="https://youtu.be/L5wnwhfj53A" target="_b">
+          <img src="images/header.png" style="width:100%">
+          <div class="display-bottommiddle container text-white padding-32 hide-small grad">
+            <h3>My Heart Will Go On</h3>
+            <p><b>Titanic Theme Song.</b></p>
+          </div>
+        </a>
+      </div>
+      <div class="mySlides display-container center fade">
+        <a href="https://youtu.be/nTixER6mJFc" target="_b">
+          <img src="images/header1.png" style="width:100%">
+          <div class="display-bottommiddle container text-white padding-32 hide-small grad">
+            <h3>Don't Cry X November Rain</h3>
+            <p><b>Guns N' Roses.</b></p>
+          </div>
+        </a>
+      </div>
+      <div class="mySlides display-container center fade">
+        <a href="https://youtu.be/Wne0p5zj990" target="_b">
+          <img src="images/header2.png" style="width:100%">
+          <div class="display-bottommiddle container text-white padding-32 hide-small grad">
+            <h3>Hearts Burst Into Fire</h3>
+            <p><b>Bullet for My Valentine.</b></p>
+          </div>
+        </a>
+      </div>
+      <div class="mySlides display-container center fade">
+        <a href="https://youtu.be/S7myTIt-9dY" target="_b">
+          <img src="images/header3.jpg" style="width:100%">
+          <div class="display-bottommiddle container text-white padding-32 hide-small grad">
+            <h3>Bhanai</h3>
+            <p><b>Tribal Rain.</b></p>
+          </div>
+        </a>
+      </div>
+      <div class="mySlides display-container center fade">
+        <a href="https://youtu.be/Ug-ioi0pedo" target="_b">
+          <img src="images/header4.png" style="width:100%">
+          <div class="display-bottommiddle container text-white padding-32 hide-small grad">
+            <h3>Hotel California</h3>
+            <p><b>Eagles.</b></p>
+          </div>
+        </a>
+      </div>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-</div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
 
-  <!-- The Band Section -->
-  <div class="container content center padding-200" style="max-width:800px" id="about">
-    <h2 class="wide"><a href="https://www.youtube.com/channel/UCxnjBuO6nvucKY-7Npno9fA" target="_b" aria-label="Main Channel" style="text-decoration: none;" > Black Five Strings</a></h2>
-    <p class="opacity"><i>Cover Band</i></p>
-    <p class="justify">
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <!-- The Band Section -->
+    <div class="container content center padding-200" style="max-width:800px" id="about">
+      <h2 class="wide"><a href="https://www.youtube.com/channel/UCxnjBuO6nvucKY-7Npno9fA" target="_b"
+          aria-label="Main Channel" style="text-decoration: none;"> Black Five Strings</a></h2>
+      <p class="opacity"><i>Cover Band</i></p>
+      <p class="justify">
         We are a group music enthusiast working on different music cover along with music development projects.
-        We have been exploring and developing music along with covering songs. 
-        We are uploading our music cover projects on YouTube since oct 4th 2014. 
+        We have been exploring and developing music along with covering songs.
+        We are uploading our music cover projects on YouTube since oct 4th 2014.
         Visit our channel to check out our work.</p>
-    <div class="row" data-aos="zoom-in" data-aos-duration="1400">
-      <h3 class="wide padding-top-64" >Band Members</h3>
-      <div class="third-m" data-aos="zoom-in" data-aos-duration="1600">
-        <a href="https://www.facebook.com/monster1429/" target="_b" aria-label="Facebook Page">
-        <p data-aos="fade-right" data-aos-duration="900">Abhishek Dahal</p>
-        <img src="images/abhi.png" class="round margin-bottom" alt="Random Name" style="width:60%"></a>
-      </div>
-      <div class="third-m" data-aos="zoom-in" data-aos-duration="1600">
-        <a href="https://www.facebook.com/profile.php?id=100074881120593" target="_b" aria-label="Facebook Page">
-        <p data-aos="fade-right" data-aos-duration="900">Sabin Dahal</p>
-        <img src="images/sabin.png" class="round margin-bottom" alt="Random Name" style="width:60%"></a>
-      </div>
-      <div class="third-m" data-aos="zoom-in" data-aos-duration="1600">
-        <a href="https://www.facebook.com/profile.php?id=100011558406242" target="_b" aria-label="Facebook Page">
-        <p data-aos="fade-right" data-aos-duration="900"> David Dhungel</p>
-        <img src="images/david.png" class="round margin-bottom" alt="Random Name" style="width:60%"></a>
+      <div class="row" data-aos="zoom-in" data-aos-duration="1400">
+        <h3 class="wide padding-top-64">Band Members</h3>
+        <div class="third-m" data-aos="zoom-in" data-aos-duration="1600">
+          <a href="https://www.facebook.com/monster1429/" target="_b" aria-label="Facebook Page">
+            <p data-aos="fade-right" data-aos-duration="900">Abhishek Dahal</p>
+            <img src="images/abhi.png" class="round margin-bottom" alt="Random Name" style="width:60%">
+          </a>
+        </div>
+        <div class="third-m" data-aos="zoom-in" data-aos-duration="1600">
+          <a href="https://www.facebook.com/profile.php?id=100074881120593" target="_b" aria-label="Facebook Page">
+            <p data-aos="fade-right" data-aos-duration="900">Sabin Dahal</p>
+            <img src="images/sabin.png" class="round margin-bottom" alt="Random Name" style="width:60%">
+          </a>
+        </div>
+        <div class="third-m" data-aos="zoom-in" data-aos-duration="1600">
+          <a href="https://www.facebook.com/profile.php?id=100011558406242" target="_b" aria-label="Facebook Page">
+            <p data-aos="fade-right" data-aos-duration="900"> David Dhungel</p>
+            <img src="images/david.png" class="round margin-bottom" alt="Random Name" style="width:60%">
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <!-- The Tour Section -->
-  <div class="black padding-300" id="follow-us">
-    <div class="containerz"  >
-      <div class="feature-grid-containerz grid grid--columns">
-        <div class="feature-grid-text" data-aos="fade-right" data-aos-duration="1600">
-          <h2 class="uppercase" ><span class="text-red" style="font-size: 3.5rem;line-height: 1;">Black Five Strings</span></h2>
-          <p>is on <strong><span class="text-red">Youtube.</span></strong>
-          </p>
-          <div class="bu-p">
-            <a href="https://www.youtube.com/playlist?list=PLNLrXUNKfglsYYyWPiGaB9pqfnaRQ5BOi" target="_b" class="bu-crc">Watch Now.</a>
+
+    <!-- The Follow-us Section -->
+    <div class="black padding-300" id="follow-us">
+      <div class="containerz">
+        <div class="feature-grid-containerz grid grid--columns">
+          <div class="feature-grid-text" data-aos="fade-right" data-aos-duration="1600">
+            <h2 class="uppercase"><span class="text-red" style="font-size: 3.5rem;line-height: 1;">Black Five
+                Strings</span></h2>
+            <p>is on <strong><span class="text-red">Youtube.</span></strong>
+            </p>
+            <div class="bu-p">
+              <a href="https://www.youtube.com/playlist?list=PLNLrXUNKfglsYYyWPiGaB9pqfnaRQ5BOi" target="_b"
+                class="bu-crc">Watch Now.</a>
+            </div>
+          </div>
+          <div class="grid feature-grid">
+            <a data-aos="fade-left" data-aos-duration="1600" href="#" target="_b" aria-label="Low fees"><img
+                src="images/1.png" alt=""></a>
+            <a data-aos="fade-left" data-aos-duration="1600" href="https://www.instagram.com/black.five.strings/"
+              target="_b" aria-label="Instagram"><img src="images/insta.png" alt=""></a>
+            <a data-aos="fade-left" data-aos-duration="1600" href="https://discord.com/invite/GrNXe8UQXC" target="_b"
+              aria-label="Discord"><img src="images/dis.png" alt=""></a>
+            <a data-aos="fade-left" data-aos-duration="1600" href="#" target="_b" aria-label="Synthetic curve"><img
+                src="images/4.png" alt=""></a>
+            <a data-aos="fade-left" data-aos-duration="1600" href="#" target="_b" aria-label="Anti slippage"><img
+                src="images/5.png" alt=""></a>
+            <a data-aos="fade-left" data-aos-duration="1600"
+              href="https://www.youtube.com/channel/UCxnjBuO6nvucKY-7Npno9fA" target="_b" aria-label="Main Channel"><img
+                src="images/yt-main.png" alt=""></a>
+            <a data-aos="fade-left" data-aos-duration="1600"
+              href="https://www.youtube.com/channel/UClX5IZAD8PhtMPNeBVPi-Jg" target="_b"
+              aria-label="Shorts Channel"><img src="images/yt-shorts.png" alt=""></a>
           </div>
         </div>
-        <div class="grid feature-grid">
-          <a data-aos="fade-left" data-aos-duration="1600" href="#" target="_b" aria-label="Low fees"><img src="images/1.png" alt=""></a>
-          <a data-aos="fade-left" data-aos-duration="1600" href="https://www.instagram.com/black.five.strings/" target="_b" aria-label="Instagram"><img src="images/insta.png" alt=""></a>
-          <a data-aos="fade-left" data-aos-duration="1600" href="https://discord.com/invite/GrNXe8UQXC" target="_b" aria-label="Discord"><img src="images/dis.png" alt=""></a>
-          <a data-aos="fade-left" data-aos-duration="1600" href="#" target="_b" aria-label="Synthetic curve"><img src="images/4.png" alt=""></a>
-          <a data-aos="fade-left" data-aos-duration="1600" href="#" target="_b" aria-label="Anti slippage"><img src="images/5.png" alt=""></a>
-          <a data-aos="fade-left" data-aos-duration="1600" href="https://www.youtube.com/channel/UCxnjBuO6nvucKY-7Npno9fA" target="_b" aria-label="Main Channel"><img src="images/yt-main.png" alt=""></a>
-          <a data-aos="fade-left" data-aos-duration="1600" href="https://www.youtube.com/channel/UClX5IZAD8PhtMPNeBVPi-Jg" target="_b" aria-label="Shorts Channel"><img src="images/yt-shorts.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- The Videos Section -->
+    <div class="grad padding-64" id="new">
+      <div class="container content">
+        <h2 class="wide center"><a href="https://www.youtube.com/playlist?list=PLNLrXUNKfglsYYyWPiGaB9pqfnaRQ5BOi"
+            target="_b" style="text-decoration:none;">VIDEOS</a></h2>
+        <p class="opacity center"><i>Latest Video From Youtube.</i></p>
+        <div class="row" style="padding:20px;border-radius: 30px;">
+          <div class="iframe-container" data-aos="zoom-in" data-aos-duration="1200">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L5wnwhfj53A?start=10"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="iframe-container" data-aos="zoom-in" data-aos-duration="1200">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nTixER6mJFc?start=12"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="iframe-container" data-aos="zoom-in" data-aos-duration="1200">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wne0p5zj990?start=8"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
-</div>
 
-  <!-- The Contact Section -->
-  <div class="grad padding-64" id="new">
-    <div class="container content">
-    <h2 class="wide center"><a href="https://www.youtube.com/playlist?list=PLNLrXUNKfglsYYyWPiGaB9pqfnaRQ5BOi" target="_b" style="text-decoration:none;">VIDEOS</a></h2>
-    <p class="opacity center"><i>Latest Video From Youtube.</i></p>
-    <div class="row" style="padding:20px;border-radius: 30px;" >
-      <div class="iframe-container" data-aos="zoom-in" data-aos-duration="1200">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L5wnwhfj53A?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="iframe-container" data-aos="zoom-in" data-aos-duration="1200">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nTixER6mJFc?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-      </div>
-      <div class="iframe-container" data-aos="zoom-in" data-aos-duration="1200">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wne0p5zj990?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
+    <!-- End Page Content -->
   </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
 
-<!-- Image of location/map -->
-<img src="images/footer.png" class="image padding-top-64 black" style="width:100%">
+  <!--Cover Image-->
+  <img src="images/footer.png" class="image padding-top-64 black" style="width:100%">
 
-<!-- Footer -->
-<footer class="container padding-64 center opacity light-grey xlarge">
-    <a href="https://www.facebook.com/monster1429/" target="_b" aria-label="Facebook Page"><i class="fa fa-facebook-official hover-opacity"></i></a>
-    <a href="https://www.instagram.com/black.five.strings/" target="_b" aria-label="Instagram Page">  <i class="fa fa-instagram hover-opacity"></i></a>
-    <a href="https://twitter.com/Abhi_B5" target="_b" aria-label="Twitter Page"><i class="fa fa-twitter hover-opacity"></i></a>
-    <a href="https://www.snapchat.com/add/abhi.xa4" target="_b" aria-label="SnapChat"><i class="fa fa-snapchat hover-opacity"></i></a>
-    <a href="https://www.youtube.com/channel/UCxnjBuO6nvucKY-7Npno9fA" target="_b" aria-label="Main Channel"><i class="fa fa-youtube hover-opacity"></i></a>
-    <br><p class="medium">Black Five Strings</p>
-</footer>
+  <!-- Footer -->
+  <footer class="container padding-64 center opacity light-grey xlarge">
+    <a href="https://www.facebook.com/monster1429/" target="_b" aria-label="Facebook Page"><i
+        class="fa fa-facebook-official hover-opacity"></i></a>
+    <a href="https://www.instagram.com/black.five.strings/" target="_b" aria-label="Instagram Page"> <i
+        class="fa fa-instagram hover-opacity"></i></a>
+    <a href="https://twitter.com/Abhi_B5" target="_b" aria-label="Twitter Page"><i
+        class="fa fa-twitter hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/add/abhi.xa4" target="_b" aria-label="SnapChat"><i
+        class="fa fa-snapchat hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UCxnjBuO6nvucKY-7Npno9fA" target="_b" aria-label="Main Channel"><i
+        class="fa fa-youtube hover-opacity"></i></a>
+    <br>
+    <p class="medium">Black Five Strings</p>
+  </footer>
 
-<script>
-var slideIndex = 0;
-showSlides();
-var slides,dots;
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    var slides, dots;
 
-function showSlides() {
+    function showSlides() {
+      var i;
+      slides = document.getElementsByClassName("mySlides");
+      dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 7000); // Change image every 8 seconds
+    }
+
+    function plusSlides(position) {
+      slideIndex += position;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      } else if (slideIndex < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    function currentSlide(index) {
+      if (index > slides.length) {
+        index = 1
+      } else if (index < 1) {
+        index = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[index - 1].style.display = "block";
+      dots[index - 1].className += " active";
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+      } else {
+        x.className = x.className.replace(" show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    //aos-script
+    AOS.init();
+
+    var acc = document.getElementsByClassName("accordion");
+
     var i;
-    slides = document.getElementsByClassName("mySlides");
-    dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 7000); // Change image every 8 seconds
-}
 
-function plusSlides(position) {
-    slideIndex +=position;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    else if(slideIndex<1){slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-}
 
-function currentSlide(index) {
-    if (index> slides.length) {index = 1}
-    else if(index<1){index = slides.length}
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[index-1].style.display = "block";  
-    dots[index-1].className += " active";
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("show") == -1) {
-    x.className += " show";
-  } else { 
-    x.className = x.className.replace(" show", "");
-  }
-}
+    for (i = 0; i < acc.length; i++) {
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-//aos-script
-AOS.init();
+      acc[i].addEventListener("click", function () {
 
-        var acc = document.getElementsByClassName("accordion");
+        this.classList.toggle("active");
 
-        var i;
+        var panel = this.nextElementSibling;
 
-        
+        if (panel.style.maxHeight) {
 
-        for (i = 0; i < acc.length; i++) {
+          panel.style.maxHeight = null;
 
-          acc[i].addEventListener("click", function() {
+        } else {
 
-            this.classList.toggle("active");
-
-            var panel = this.nextElementSibling;
-
-            if (panel.style.maxHeight) {
-
-              panel.style.maxHeight = null;
-
-            } else {
-
-              panel.style.maxHeight = panel.scrollHeight + "px";
-
-            } 
-
-          });
+          panel.style.maxHeight = panel.scrollHeight + "px";
 
         }
 
-</script>
+      });
+
+    }
+  </script>
 
 </body>
+
 </html>
